@@ -1,0 +1,38 @@
+{
+    "git.autofetch": true,
+    "git.confirmSync": false,
+    "files.exclude": {
+        "*.lnk": false,
+        ".vscode": false,
+        "*.ini": false,
+        "**/.vs/**": false,
+        "**node_modules**": false
+    },
+    "git.enableSmartCommit": true,
+    "workbench.startupEditor": "newUntitledFile",
+    "multiCommand.commands": [
+        {
+            "command": "multiCommand.maxRun",
+            "sequence": [
+                "python.execInTerminal",
+                "workbench.action.terminal.focus",
+                "workbench.action.toggleMaximizedPanel"
+            ]
+        },
+        {
+            "command": "multiCommand.maxTerminal",
+            "sequence": [
+                "workbench.action.toggleMaximizedPanel",
+                "workbench.action.terminal.focus"
+            ]
+        },
+        {
+            "command": "multiCommand.minTerminal",
+            "sequence": [
+                "workbench.action.toggleMaximizedPanel",
+                "workbench.action.focusActiveEditorGroup"
+            ]
+        }
+    ],
+    "window.zoomLevel": 0
+}

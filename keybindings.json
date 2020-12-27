@@ -1,0 +1,44 @@
+// Place your key bindings in this file to override the defaultsauto[]
+[
+    {
+        "key": "shift+f10",
+        "command": "extension.multiCommand.execute",
+        "args": {
+            "command": "multiCommand.maxRun"
+        }
+    },
+    {
+        "key": "ctrl+oem_102",
+        "command": "extension.multiCommand.execute",
+        "args": {
+            "command": "multiCommand.maxTerminal"
+        }
+    },
+    {
+        "key": "ctrl+oem_102",
+        "command": "extension.multiCommand.execute",
+        "when": "terminalFocus",
+        "args": {
+            "command": "multiCommand.minTerminal"
+        }
+    },
+    {
+        "key": "ctrl+numpad1",
+        "command": "revealFileInOS"
+    },
+    {
+        "key": "ctrl+d",
+        "command": "-editor.action.addSelectionToNextFindMatch",
+        "when": "editorFocus"
+    },
+    {
+        "key": "ctrl+d",
+        "command": "editor.action.deleteLines",
+        "when": "textInputFocus && !editorReadonly"
+    },
+    {
+        "key": "ctrl+shift+k",
+        "command": "-editor.action.deleteLines",
+        "when": "textInputFocus && !editorReadonly"
+    }
+]
