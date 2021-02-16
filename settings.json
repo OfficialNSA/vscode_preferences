@@ -34,5 +34,8 @@
             ]
         }
     ],
-    "window.zoomLevel": 0
+    "window.zoomLevel": 0,
+    "python.languageServer": "Pylance",
+    "latex-workshop.latex.autoBuild.cleanAndRetry.enabled": false,
+    "latex-workshop.latex.autoBuild.run": "never"
 }
